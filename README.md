@@ -27,18 +27,15 @@ O `interpretar.py` lê o `.map` e o resultado no mesmo diretório em que é exec
 3. Na raiz, execute:
 
 ```bash
-python3 interpretar.py resultado1.txt --verbose
+python3 interpretar.py resultadoX.txt --verbose
 ```
+Onde X é o número da situação.
 
-Exemplo para a situação 2:
+Exemplo para a situação 1:
 
 ```bash
-cp sit2_S0_S5/* .
 python3 interpretar.py resultado1.txt --verbose
 ```
-
-> **Atenção:** os arquivos têm o mesmo nome em todas as pastas. Ao trocar de situação, copie os arquivos da nova pasta para a raiz, sobrescrevendo os anteriores.
-
 ---
 
 # Resolução manual × resultado da máquina
@@ -123,17 +120,3 @@ PLANO ENCONTRADO (6 acoes):
 **Resultado: igual.** Mesmos blocos, destinos, posições e tempos.
 
 ---
-
-# Resumo
-
-| Situação | Ações (manual) | Ações (máquina) | Resultado |
-|---|---|---|---|
-| 1 | 4 | 4 | Igual |
-| 2 | 5 | 5 | Diferente, equivalente |
-| 3 | 6 | 6 | Igual |
-
-Nas situações 1 e 3, o plano da máquina é idêntico ao manual. Na situação 2, a máquina encontrou uma sequência alternativa com o mesmo número de ações.
-
-## Repositório
-
-[Trabalho-FIA no GitHub](https://github.com/davitel2025/Trabalho-FIA)
